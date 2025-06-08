@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fcf5eb;
+    overflow-x: hidden;
+    padding: 0 40px;
+}
+.navbar{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    display: flex;
+    
+}
+.navbar img:nth-child(1){
+    height: 30px;
+    width: 130px;
+
+}
+.nav-items{
+    display: flex;
+    gap: 40px;
+    padding: 15px;
+    cursor: pointer;
+}
+.features{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+}
+.features > img{
+    width: 10px;
+    height: 20px;
+    transform: rotate(-90deg);
+}
+.navbar > button, .btn{
+    width: 150px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 60px;
+    background-color: #25d366;
+    border: none;
+    border: 0.1px solid black;
+    z-index: 1;
+}
+.nav-items > p:hover::after{
+    
+    content: "";
+    width: 10%;
+    height: 2px;
+    left:5%;
+    bottom: 0%;
+    background-color: #25d366;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    transform-origin: left;
+
+}
+.nav-items > p:hover::after{
+    transform: scaleX(1);
+}
+.firstsection{
+    
+    padding: 20px 40px;
+    /* padding-top: 40px; */
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+}
+.maa-beti{
+    height: 750px;
+    background-image: url(./assets/MaaBeti.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+   
+    color: white;
+}
+.left > h1 {
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    line-height: 90px;
+    letter-spacing: -3px;
+    font-size: 4.9em;
+    font-weight: 300;
+}
+.firstsection > p{
+    padding-top: 15px;
+    font-size: 12px;
+    text-align: end;
+    opacity: 0.8;
+
+}
+.right{
+    margin-top: 9%;
+    position: relative;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right > :nth-child(1)
+{
+    width: 450px;
+    animation: gm 0.5s ease-in-out;
+}
+@keyframes gm {
+    0%{
+        transform: translateY(50px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+.right > :nth-child(2)
+{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    width: 450px;
+    animation: dil 1s;
+}
+@keyframes dil {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+.right img:nth-child(3){
+    margin-left: 20px;
+    width: 420px;
+    animation: chai 1.8s ease-in-out;
+    
+}
+@keyframes chai {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+
+.right img:nth-child(4){
+    width: 450px;
+    animation: voice 2.1s ease-in-out;
+}
+@keyframes voice {
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.right img:nth-child(5){
+    width: 450px;
+    animation: emo 3.1s ease-in-out;
+}
+@keyframes emo {
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.right img:nth-child(6){
+    position: absolute;
+    top:470px;
+    right: 17px;
+    width: 450px;
+    animation: emotionalEmoji 3.4s ease-in-out ;
+}
+@keyframes emotionalEmoji {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+.right img:nth-child(7){
+    padding-top: 30px;
+    width: 450px;
+    animation: trip 4s ease-in-out;
+}
+@keyframes trip {
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.btn{
+    width: 200px;
+}
+
+

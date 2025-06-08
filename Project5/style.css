@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+    height: 6%;
+}
+.leftnav{
+    display: flex;
+    gap: 20px;
+    
+}
+.leftnav > img:nth-child(2){
+    
+    width: 90px;
+
+}
+.centernav{
+    height: 100%;
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.centernav > :nth-child(1){
+    border-radius: 50px 0px 0px 50px;
+    background-color: black;
+    padding: 10px;
+    width: 60%;
+    
+}
+.centernav > :nth-child(2){
+    border-radius: 0px 50px 50px 00px;
+    
+    height: 37px;
+    background-color: rgb(47, 44, 44);
+    padding: 7px;
+}
+.centernav > :nth-child(3){
+    border-radius: 50px 50px 50px 50px;
+    height: 37px;
+    background-color: rgb(47, 44, 44);
+    padding: 7px;
+    margin: 15px;
+}
+
+.rightnav{
+    height: 35px;
+    display: flex;
+    gap: 20px;
+
+}
+.rightnav > :nth-child(3){
+    border-radius: 50%;
+}
+.ytpremium{
+    height: 61%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+.ytPremiumDetails > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px
+}
+.ytPremiumDetails> div > button{
+    width: 45%;
+    background-color: rgb(13, 165, 230);
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    
+
+}
+.ytPremiumDetails p:nth-child(2){
+    font-size: 25px;
+    font-weight: 500;
+}
+.annual{
+    color: #76c4ff;
+}
+.ytPremiumDetails p:nth-child(4){
+    color: #3ebaff;
+}
+.two{
+    height: 39%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.two > div:nth-child(1),.two > div:nth-child(2),.two > div:nth-child(3){
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.bg1{
+    height:55%;
+    
+    background-image: url(./assets/bg1.jpeg);
+    background-size: cover;
+    overflow-x: hidden;
+}
+.bg1 > div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 190px 100px 100px 800px; 
+    color: white;
+}
+
+
