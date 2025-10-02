@@ -12,13 +12,14 @@ function App() {
   }
   return (
     <>
-    <div>
+    <div className='bg-gray-300 text-center'>
       <Heading />
-      <div>
-        <input type="text" placeholder='Search' onChange={(e)=>{setVal(e.target.value) }} />
-        <button onClick={handleSearch}>Search</button>
+      <div className='flex justify-center items-center'>
+        <input className='p-3 rounded-l-2xl bg-white w-80' type="text" placeholder='Type anything' onChange={(e)=>{setVal(e.target.value) }} />
+        <button className='bg-green-300 p-3 border-s-blue-400 rounded-r-2xl hover-cursor' onClick={handleSearch}>Search</button>
       </div>
-      <AllCards data={filterData} />
+      {filterData.length <=0 ? <h1 className='text-5xl mt-30'>No Items found</h1> : <AllCards data={filterData} />}
+      
     </div>
     </>
   )
